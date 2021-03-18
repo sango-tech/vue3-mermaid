@@ -72,12 +72,6 @@ nodes: [
       ],
 ```
 
-![links](./img/links.png)
-
-#### Possible edgeType values:
-
-![edge.default](./img/edge_types.png)
-
 ### Template
 
 ```vue
@@ -89,10 +83,6 @@ nodes: [
   ></vue3-mermaid>
 </template>
 ```
-
-### Result
-
-![Flowchart](./img/flow.png)
 
 ### Group Type
 
@@ -124,8 +114,6 @@ export default {
   }
 };
 ```
-
-![Group](./img/group.png)
 
 ### Theme
 
