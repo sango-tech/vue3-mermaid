@@ -1,0 +1,1 @@
+!function(e,i){"object"==typeof exports&&"undefined"!=typeof module?module.exports=i(require("vue3-mermaid/src/vue3-mermaid")):"function"==typeof define&&define.amd?define(["vue3-mermaid/src/vue3-mermaid"],i):e.VueMermaid=i(e.Vue3Mermaid)}(this,function(e){"use strict";return e=e&&e.hasOwnProperty("default")?e.default:e,{install:function(i){i.component("Vue3Mermaid",e)}}});
