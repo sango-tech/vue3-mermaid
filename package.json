@@ -1,7 +1,7 @@
 {
   "name": "vue3-mermaid",
   "description": "flowchart of mermaid with vue componet",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "src/index.js",
   "author": "abinhho <binh@sango-tech.com>",
   "contributors": [
@@ -10,7 +10,8 @@
   "license": "MIT",
   "files": [
     "dist",
-    "src"
+    "src",
+    "type.d.ts"
   ],
   "types": "./type.d.ts",
   "keywords": [
