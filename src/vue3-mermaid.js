@@ -65,13 +65,15 @@ export default {
       const nodeStyles = nodes
         .filter((node) => node.style)
         .map((node) => `style ${node.id} ${node.style}`)
+      let index = 0
       const nodeLinkStyles = nodes
         .filter((node) => node.linkStyle)
         .map(
-          (node) =>
-            `linkStyle ${node.linkNumber || nodes.indexOf(node)} ${node.linkStyle
-            }`
-        )
+          (node) => {
+            let linkNumber = (node.linkNumber || node.linkNumber == '0' ? node.linkNumber : index)
+            index++
+            return `linkStyle ${linkNumber} ${node.linkStyle}`
+          })
       return nodeStyles.concat(styles).concat(nodeLinkStyles)
     },
     parseCode() {
