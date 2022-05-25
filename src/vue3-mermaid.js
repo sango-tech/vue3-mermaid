@@ -113,6 +113,7 @@ export default {
                   text: node.text,
                   style: node.style,
                   editable: node.editable,
+                  edgeType: node.edgeType,
                 })
                 node.next.forEach((id) => {
                   if (nids.has(id)) {
@@ -121,6 +122,7 @@ export default {
                       text: node.text,
                       link: node.link,
                       next: [id],
+                      edgeType: node.edgeType,
                     })
                   } else {
                     outNodes.push({
@@ -128,6 +130,7 @@ export default {
                       text: node.text,
                       link: node.link,
                       next: [id],
+                      edgeType: node.edgeType,
                     })
                   }
                 })
